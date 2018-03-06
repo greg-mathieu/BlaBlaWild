@@ -21,11 +21,8 @@
         </activity>
         <activity
             android:name=".ItinerarySearchActivity"
-            android:label="@string/search_text"/>
-        <activity
-            android:name=".ItineraryListActivity"
-            android:label="Dest">
-        </activity>
+            android:label="@string/search_text" />
+        <activity android:name=".ItineraryListActivity"></activity>
     </application>
 
 </manifest>
