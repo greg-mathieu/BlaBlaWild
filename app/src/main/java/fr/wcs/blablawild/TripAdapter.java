@@ -19,6 +19,7 @@ public class TripAdapter extends ArrayAdapter<TripModel> {
         super(context, 0, trips);
     }
 
+
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         // Get the data item for this position

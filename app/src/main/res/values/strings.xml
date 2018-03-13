@@ -11,4 +11,18 @@
     <string name="edit_date">01/01/2018</string>
     <string name="button_search_destination">Search</string>
     <string name="error_message_departure_destination">Please fill your departure and destination !</string>
+    <string name="error_message_vehicle">Please fill all the fields !</string>
+    <string name="button_vehicle">Vehicle</string>
+    <string-array name="array_vehicle">
+        <item>Please select...</item>
+        <item>Car</item>
+        <item>Boat</item>
+        <item>Plane</item>
+    </string-array>
+    <string name="button_send">SEND</string>
+    <string name="editText_model">Model</string>
+    <string name="editText_brand">Brand</string>
+    <string name="editText_kilometers">Kilometers</string>
+    <string name="editText_hour">Hours</string>
+    <string name="editText_speed">Speed</string>
 </resources>

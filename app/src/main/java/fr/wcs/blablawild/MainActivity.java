@@ -36,6 +36,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, ItinerarySearchActivity.class));
             }
         });
+
+        Button btnVehicle = findViewById(R.id.button_vehicle);
+        btnVehicle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, VehicleActivity.class));
+            }
+        });
     }
 
     @Override
