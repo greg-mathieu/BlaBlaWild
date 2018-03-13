@@ -36,6 +36,12 @@ public class VehicleActivity extends AppCompatActivity {
                 final EditText editTextKlm = findViewById(R.id.editText_kilometers);
                 final EditText editTextHours = findViewById(R.id.editText_hour);
                 final EditText editTextSpeed = findViewById(R.id.editText_speed);
+
+                editBrand.setText("");
+                editModel.setText("");
+                editTextKlm.setText("");
+                editTextHours.setText("");
+                editTextSpeed.setText("");
                 
 
                 if (selection.equals("Please select...")) {
