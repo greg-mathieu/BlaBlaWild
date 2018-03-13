@@ -15,6 +15,7 @@ public class TripModel {
         this.price = price;
     }
 
+
     public String getFirstname() {
         return firstname;
     }

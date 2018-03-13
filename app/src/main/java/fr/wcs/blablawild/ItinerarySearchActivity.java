@@ -23,17 +23,20 @@ public class ItinerarySearchActivity extends AppCompatActivity {
                 final String departure = editDeparture.getText().toString();
                 EditText editDestination = findViewById(R.id.edit_destination);
                 final String destination = editDestination.getText().toString();
+                EditText editDate = findViewById(R.id.edit_date);
+                final String date = editDate.getText().toString();
 
                 if (departure.matches("")|(destination.matches(""))) {
                     Toast.makeText(ItinerarySearchActivity.this, R.string.error_message_departure_destination, Toast.LENGTH_SHORT).show();
                 }
 
                 else {
-                    //startActivity(new Intent(ItinerarySearchActivity.this, ItineraryListActivity.class));
 
+                    SearchModel searchModel = new SearchModel(departure, destination, date);
                     Intent searchIntent = new Intent(ItinerarySearchActivity.this, ItineraryListActivity.class);
-                    searchIntent.putExtra("dataDeparture", departure);
-                    searchIntent.putExtra("dataDestination", destination);
+                    searchIntent.putExtra("searchModel", searchModel);
+                    //searchIntent.putExtra("dataDeparture", departure);
+                    //searchIntent.putExtra("dataDestination", destination);
                     ItinerarySearchActivity.this.startActivity(searchIntent);
                 }
             }
